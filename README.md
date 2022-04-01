@@ -1,2 +1,3 @@
-# HTML5
-Projetos desenvolvidos quando estava estudando HTML5
+# Projeto desenvolvido para estudo de HTML5 e CSS
+
+Construção de um formulário simples utilizando HTML5 e CSS
