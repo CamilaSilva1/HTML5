@@ -1,0 +1,121 @@
+<!-- Author Camila Silva
+     Create 01/04/2022
+     Form in Html and Css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title> Cadastro </title>
+</head>
+<body>
+
+    <div>
+
+        <!-- title -->
+        <h1> Cadastro de Desenvolvedores </h1>
+        <p> Insira suas informações </p> </div> <br>
+
+    </div>
+    
+    <!-- main form -->
+    <form>
+
+        <!-- fieldset for the separating fields -->
+        <fieldset> 
+            <!-- name -->
+            <div>
+                <label> Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <!-- lastname -->
+            <div>
+                <label> Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <!-- email -->
+        <div>
+            <label> Email </label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- type -->
+        <div>
+            <label> Como você se classifica? </label>
+
+            <label>
+                <input type="radio" name="tipo" value="frontend" checked> Front-end
+            </label>
+
+            <label>
+                <input type="radio" name="tipo" value="backend"> Back-end
+            </label>
+
+            <label>
+                <input type="radio" name="tipo" value="fullstack"> Fullstack
+            </label>
+        </div>
+
+        <!-- level -->
+        <div>
+            <label> Senioridade </label>
+
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option> Junior </option>
+                <option> Pleno </option>
+                <option> Senior </option>
+            </select>
+        </div>
+
+        <!-- selection of tecnologies -->
+        <fieldset>          
+            <div>
+
+                <label> Selecione as tecnologias de conhecimento: </label> <br> <br>
+                
+                <input type="checkbox" id="html" name="html" value="HTML">
+                <label for="html"> HTML </label>
+
+                <input type="checkbox" id="css" name="css" value="CSS">
+                <label for="css"> CSS </label>
+
+                <input type="checkbox" id="js" name="js" value="Javascript">
+                <label for="js"> Javascript </label>
+
+                <input type="checkbox" id="php" name="php" value="PHP">
+                <label for="php"> PHP </label>
+
+                <input type="checkbox" id="c#" name="c#" value="C#">
+                <label for="c#"> C# </label>
+
+                <input type="checkbox" id="python" name="python" value="Python">
+                <label for="python"> Python </label>
+
+                <input type="checkbox" id="java" name="java" value="Java">
+                <label for="java"> Java </label>
+
+            </div>
+        </fieldset>
+
+        <!-- text area -->
+        <div>
+
+            <br>
+            <label> Compartilhe um puco sobre sua tragetória </label>
+
+            <textarea row="6" style="width: 26em" id="tragetoria"> </textarea>
+        </div>
+
+        <!-- submit button -->
+        <button type="submit"> ENVIAR </button>
+
+    </form>
+
+</body>
+</html>
