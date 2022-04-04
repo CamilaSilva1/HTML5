@@ -8,15 +8,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
     <title> Cadastro </title>
 </head>
-<body>
+<body id="container">
 
     <div>
 
         <!-- title -->
-        <h1> Cadastro de Desenvolvedores </h1>
-        <p> Insira suas informações </p> </div> <br>
+        <h1 id="title"> Cadastro de Desenvolvedores </h1>
+        <p id="caption"> Insira suas informações </p> </div> <br>
 
     </div>
     
@@ -24,29 +25,32 @@
     <form>
 
         <!-- fieldset for the separating fields -->
-        <fieldset> 
+        <fieldset class="group"> 
             <!-- name -->
-            <div>
-                <label> Nome: </label>
-                <input type="text" name="nome" id="nome">
+            <div class="field">
+                <label for="nome"> <strong>Nome</strong> </label>
+                <input type="text" name="nome" id="nome" required> <!--required because this field
+                                                                        cant be empty-->
             </div>
 
             <!-- lastname -->
-            <div>
-                <label> Sobrenome: </label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="field">
+                <label for="sobrenome"> <strong>Sobrenome</strong> </label>
+                <input type="text" name="sobrenome" id="sobrenome" required> <!--required because this field
+                                                                                cant be empty-->
             </div>
-        </fieldset>
 
-        <!-- email -->
-        <div>
-            <label> Email </label>
-            <input type="email" name="email" id="email">
-        </div>
+        </fieldset>
+        
+            <!-- email -->
+            <div class="field">
+                <label for="email"> <strong>Email</strong> </label>
+                <input type="email" name="email" id="email" required> <!--cant be empty-->
+            </div>
 
         <!-- type -->
-        <div>
-            <label> Como você se classifica? </label>
+        <div class="field">
+            <label> <strong>Como você se classifica?</strong> </label>
 
             <label>
                 <input type="radio" name="tipo" value="frontend" checked> Front-end
@@ -62,8 +66,8 @@
         </div>
 
         <!-- level -->
-        <div>
-            <label> Senioridade </label>
+        <div class="field">
+            <label for="senioridade"><strong> Senioridade</strong> </label>
 
             <select id="senioridade">
                 <option selected disabled value="">Selecione</option>
@@ -74,10 +78,10 @@
         </div>
 
         <!-- selection of tecnologies -->
-        <fieldset>          
-            <div>
+        <fieldset class="group">          
+            <div id="checkbox">
 
-                <label> Selecione as tecnologias de conhecimento: </label> <br> <br>
+                <label><strong> Selecione as tecnologias de conhecimento </strong> </label> <br> <br>
                 
                 <input type="checkbox" id="html" name="html" value="HTML">
                 <label for="html"> HTML </label>
@@ -104,16 +108,16 @@
         </fieldset>
 
         <!-- text area -->
-        <div>
+        <div class="field">
 
             <br>
-            <label> Compartilhe um puco sobre sua tragetória </label>
+            <label for="tragetoria"> <strong> Compartilhe um puco sobre sua tragetória</strong> </label>
 
             <textarea row="6" style="width: 26em" id="tragetoria"> </textarea>
         </div>
 
         <!-- submit button -->
-        <button type="submit"> ENVIAR </button>
+        <button class="btnEnviar" type="submit" onsubmit=""> ENVIAR </button>
 
     </form>
 
