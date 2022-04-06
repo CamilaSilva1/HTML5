@@ -95,9 +95,14 @@
         background-color: rgb(205, 137, 234);
     }
 
-    .body_img{
-        height: 300px;
-        padding-top: 40px;
+    .icons{
+        display: flex;
+        flex-direction: row;
+        height: 120px;
+        width: 90px;    
+        padding-right: 20em; 
+        padding-top: 2em; 
+        gap: 10px;
     }
     /* sdjusting the main footer elements */
     .conteudo_secundario{
@@ -138,3 +143,5 @@
         color: rgb(166, 98, 193);
         font-size: 90px;
     }
+
+/* ended in 06/04/2022 */
