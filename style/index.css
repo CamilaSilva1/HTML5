@@ -1,0 +1,56 @@
+/* Created by Camila Silva
+   Since 07/04/2022
+   register css site  */
+
+/* default reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color that will be in background  */
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #df7b95;  
+}
+
+.header_left{
+    display: flex;
+    flex-direction: row;
+}
+.header_left p{
+    padding: 10px;
+    color: #df7b95;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* adjusting primary content */
+.primary_content{  
+    display: flex;
+    flex-direction: column;  
+    background-color: aliceblue;
+    border: none;
+    margin-top: 20px;
+    width: 500px;
+    height: 550px;
+}
+
+/* adjusting primary content */
+.secondary_content{  
+    background-color: rgb(22, 124, 213);
+    border: none;
+    margin-top: 20px;
+    width: 500px;
+    height: 550px;
+}
+
+.body_left{
+    
+}
+
+
+
