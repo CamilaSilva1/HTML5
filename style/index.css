@@ -2,10 +2,14 @@
    Since 07/04/2022
    register css site  */
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&family=Roboto+Mono&family=Rubik+Microbe&family=Rubik+Moonrocks&display=swap');
+
 /* default reset */
 *{
     margin: 0;
     padding: 0;
+
 }
 
 /* color that will be in background  */
@@ -14,43 +18,215 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    background-color: #df7b95;  
+    margin: 10px 50px 50px 50px;
+    background-color:rgb(230, 176, 90) ;
 }
 
-.header_left{
-    display: flex;
-    flex-direction: row;
-}
+/* adjusting left paragraph header */
 .header_left p{
-    padding: 10px;
+    padding: 10px 30px;
     color: #df7b95;
     font-weight: bolder;
-    text-shadow: 2px 2px 2px #000000;
+    font-size: 30px;  
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: 'Beau Rivage', cursive;
 }
 
 /* adjusting primary content */
 .primary_content{  
     display: flex;
     flex-direction: column;  
-    background-color: aliceblue;
+    background-color: rgb(141, 141, 170);
     border: none;
-    margin-top: 20px;
-    width: 500px;
-    height: 550px;
+    margin-top: 80px;
+    width: 400px;
+    height: 500px;
+    border-style:dotted;
+    border-radius: 50px;
+    box-shadow: 8px 8px 4px 4px rgb(57, 54, 54);
+}
+
+/* adjusting body left img */
+.body_left img{
+    padding-left: 50px;
+    padding-top: 0.1em;
+    width: 300px;
+    height:300px;  
+}
+
+/* adjusting primary paragraph footer */
+.primary_footer p{
+    padding-left: 50px;
+    font-size: 17px;
+    color: #DFDFDE;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* adjusting primary content */
 .secondary_content{  
-    background-color: rgb(22, 124, 213);
+    background-color: #DFDFDE;
     border: none;
-    margin-top: 20px;
-    width: 500px;
-    height: 550px;
+    margin-top: 80px;
+    width: 400px;
+    height: 500px;
+    border-style:dotted;
+    border-radius: 50px;
+    box-shadow: 8px 8px 4px 4px rgb(57, 54, 54);
 }
 
-.body_left{
-    
+/* adjusting body right title */
+.body_right_title{  
+    display: flex;
+    justify-content: center;
 }
+
+/* adjusting secondary content main title */
+.secondary_content h1{
+    padding-right: 100px;
+    color: #df7b95;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding-top: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+/* adjusting secondary paragraph content */
+.secondary_content p{
+    font-family: 'Roboto Mono', monospace;  
+    font-size: 14px;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+
+/* adjusting "or" paragraph */
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:200px;
+    padding-right: 90px;
+}
+
+/* adjusting secondary content with parameter "strong" */
+.secondary_content strong{
+    color: #df7b95;
+    font-weight: bold;
+}
+
+/* adjusting button register */
+.button_register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px ;
+    gap: 10px;
+}
+
+/* adjusting button register with parameter "button" */
+.button_register button{
+    border-radius: 10px;
+    padding: 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px #df7b95;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* adjusting register hover button */
+.button_register button:hover{
+    cursor: pointer;
+    background-color: #db90a4;
+}
+
+/* adjusting google button */
+.google{
+    background-color: rgb(189, 218, 241);
+    color: rgb(0, 0, 0);
+}
+
+/* adjusting facebook button */
+.facebook{
+    background-color: rgb(82, 82, 154);
+    color: rgb(255, 255, 255);
+}
+
+/* adjusting input register */
+.input{
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    width: 500px;
+}
+
+/* adjusting input register with parameter "input" */
+.input_register input{
+    border-radius: 10px;
+    border-color: #df7b95;
+    width: 375px;
+    height: 20px;
+}
+
+/* adjusting input register with parameter "label" */
+.input_register label{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* adjusting input password with parameter "input" */
+.input_password input{
+    border-radius: 10px;
+    border-color: #df7b95;
+    width: 375px;
+    height: 20px;
+}
+
+/* adjusting input password with parameter "label" */
+.input_password label{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* adjusting checkbox accept */
+.input_accept {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* adjusting button register */
+.btn_register {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 20px;
+}
+
+/* adjusting button register with parameter "button" */
+.btn_register button{
+    width: 375px;
+    height: 40px;
+    background-color: rgb(230, 176, 90);
+    border-radius: 6px;
+    border-color: #df7b95;
+    font-size: 24px;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: bold ;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+/* adjusting button hover register */
+.btn_register button:hover{
+    cursor: pointer;
+    background-color: #db90a4;
+}
+
+
+
+
+
 
 
 
