@@ -163,7 +163,8 @@ body{
     border-radius: 10px;
     border-color: #df7b95;
     width: 375px;
-    height: 20px;
+    height: 25px;
+    padding-left: 35px;
 }
 
 /* adjusting input register with parameter "label" */
@@ -178,7 +179,21 @@ body{
     border-radius: 10px;
     border-color: #df7b95;
     width: 375px;
-    height: 20px;
+    height: 25px;
+    padding-left: 35px;
+}
+
+.material-icons{
+    position: absolute;
+    left: 28.5em;
+    padding-top: 2px;
+    color: #ea3767;
+}
+
+#eye{
+    position: absolute;
+    left: 66em; 
+    padding-top: 5px;
 }
 
 /* adjusting input password with parameter "label" */
@@ -190,23 +205,20 @@ body{
 
 /* adjusting checkbox accept */
 .input_accept {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: inline-block;
+    padding-left: 120px;
     padding-top: 20px;
 }
 
 /* adjusting button register */
 .btn_register {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+   padding-left: 120px;
    padding-top: 20px;
 }
 
 /* adjusting button register with parameter "button" */
 .btn_register button{
-    width: 375px;
+    width: 410px;
     height: 40px;
     background-color: rgb(230, 176, 90);
     border-radius: 6px;
@@ -222,6 +234,8 @@ body{
     cursor: pointer;
     background-color: #db90a4;
 }
+
+
 
 
 

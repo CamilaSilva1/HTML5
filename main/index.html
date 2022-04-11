@@ -25,7 +25,6 @@
 
 <body>
       
-    
         <!-- main left content -->
         <fieldset class="primary_content">
 
@@ -57,46 +56,56 @@
                 <p> Already have an account? <strong>Log in</strong></p>
 
                 <div class="button_register">
-                    <!-- google button -->
-                    <button class="google">Sign up with Google</button>
+
+                    <form action="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession">
+                        <!-- google button -->
+                        <button class="google">Sign up with Google</button>
+                    </form>
         
-                    <!-- facebook button -->
-                    <button class="facebook">Sign up with Facebook</button>
+                    <form action="https://www.facebook.com">
+                        <!-- facebook button -->
+                        <button class="facebook">Sign up with Facebook</button>
+                    </form>
+
                 </div>
 
+                <!-- paragraph -->
                 <p class="or">------------------or------------------</p>
 
+            <form>
                 <div class="input">
                     <!-- input register -->
                     <div class="input_register">
                         <label for="email">Email address<br></label>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
                         <span class="material-icons">email</span>
                     </div>
 
                     <!-- input password -->
                     <div class="input_password">
                         <label for="password">Password<br></label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                         <span class="material-icons">lock</span>
-                        <span class="lnr lnr-eye"></span>
+                        <span id="eye" class="lnr lnr-eye"></span>
                     </div>
            
                 </div>
 
                 <!-- agree checkbox -->
                 <div class="input_accept">
-                    <input type="checkbox" id="accept" name="accept" value="accept">
+                    <input type="checkbox" id="accept" name="accept" value="accept" required>
                     <label for="accept">I agree to plataform's <strong>Terms of Service</strong> and 
                                     <strong> Privacy Policy</strong></label>
                 </div>
 
                 <!-- register button -->
                 <div class="btn_register">
-                    <button>Register</button>
+                    <button type="submit" onsubmit="">Register</button>         
                 </div>
+            </form>
 
         </fieldset> 
+    
 
 </body>
 
