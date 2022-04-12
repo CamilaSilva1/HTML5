@@ -1,0 +1,80 @@
+/*   Author Camila Silva
+     Since 12/04/2022
+     Css index.html */
+
+/* font text */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Playfair+Display&display=swap');
+
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body color default */
+body{
+    background: linear-gradient(
+        to right,
+        rgb(241, 196, 204) 0%,
+        rgb(241, 196, 204) 50%,
+        #60bc70 50%,
+        #60bc70 110%
+    );
+}
+
+/* adjusting header position */
+.menu_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+/* adjusting text left header */
+.menu_header h1{
+    padding-left: 75px;
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 24px;   
+}
+/* adjusting right header icons */
+.icons{
+    display: flex;
+    gap: 20px;
+    color: rgba(238, 238, 238, 0.48);
+    cursor: pointer;
+    padding-right: 75px;
+}
+
+/* adjusting header links */
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Anek Odia', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* adjusting text that will be in the body center */
+.main_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+/* adjusting caption that will be in the body center */
+.main_title h1{
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+}
+/* adjusting h2 tag */
+.main_title h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
