@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 /* adjusting text left header */
 .menu_header h1{
@@ -58,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 /* adjusting caption that will be in the body center */
 .main_title h1{
@@ -70,11 +70,61 @@ body{
     font-size: 40px;
     font-family: 'Playfair Display', serif;
 }
-
+/* adjusting main text */
 .main_content{
-    display: flex;
-    flex-direction: row;
+    padding-top: 30px;
 }
 
-
+.left_right{
+    display: flex;
+    flex-direction: column;
+}
+/* adjusting left body text */
+.left_right h3{
+    padding-left: 75px;
+    font-family: 'Anek Odia', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+/* adjusting left body text */
+.left_right p{
+    width: 30%;
+    padding-left: 75px;
+    text-align: justify;
+    font-family: 'Anek Odia', sans-serif;
+    font-weight: 500;
+}
+/* adjusting button and text that will be on the side left*/
+.cart{
+    display: flex;
+    flex-direction: row;
+    padding-left: 75px;
+    padding-top: 40px;
+}
+/* adjusting cart button */
+.cart button{
+    width: 13%; 
+    height: 45px;  
+    background-color: black;
+    color: white;
+    font-family: 'Anek Odia', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-style: outset;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 20px 15px 0px rgba(0, 0, 0, 0.247);
+}
+/* adjusting hover button */
+.cart button:hover{
+    cursor: pointer;
+    background-color: #60bc70;
+    color: black;
+}
+/* adjusting price button */
+.cart p{
+    padding-left: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+    font-size: 35px; 
+}
 
