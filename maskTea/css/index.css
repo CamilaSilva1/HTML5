@@ -21,6 +21,7 @@ body{
     );
 }
 
+
 /* adjusting header position */
 .menu_header{
     display: flex;
@@ -38,11 +39,15 @@ body{
 .icons{
     display: flex;
     gap: 20px;
-    color: rgba(238, 238, 238, 0.48);
+    color: rgba(255, 255, 255, 0.754);
     cursor: pointer;
     padding-right: 75px;
 }
-
+/* adjusting hover of the icons */
+.icons a:hover{
+    color: rgb(86, 82, 82);
+    transition: 0.5s;
+}
 /* adjusting header links */
 .link{
     display: flex;
@@ -52,6 +57,12 @@ body{
     font-family: 'Anek Odia', sans-serif;
     font-weight: bold;
     cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(79, 77, 77);
+}
+
+.link a:hover{
+    font-size: 18px;
+    transition: 0.5s;
 }
 /* adjusting text that will be in the body center */
 .main_title{
@@ -72,27 +83,34 @@ body{
 }
 /* adjusting main text */
 .main_content{
-    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.left_right{
-    display: flex;
-    flex-direction: column;
+.main_content img{
+    width: 35%;
+    padding-right: 0.4%;
+    position: fixed; 
+}
+/* adjusting text that will be on the left side */
+.left_text{
+    padding-top: 10px;
+    position: fixed; 
 }
 /* adjusting left body text */
-.left_right h3{
+.left_text h3{
     padding-left: 75px;
     font-family: 'Anek Odia', sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
 /* adjusting left body text */
-.left_right p{
-    width: 30%;
+.left_text p{
+    width: 32%;
     padding-left: 75px;
-    text-align: justify;
     font-family: 'Anek Odia', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 /* adjusting button and text that will be on the side left*/
 .cart{
@@ -103,7 +121,7 @@ body{
 }
 /* adjusting cart button */
 .cart button{
-    width: 13%; 
+    width: 12%; 
     height: 45px;  
     background-color: black;
     color: white;
@@ -111,14 +129,16 @@ body{
     font-weight: bold;
     font-size: 16px;
     border-style: outset;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px / 50px;
     box-shadow: 0px 20px 15px 0px rgba(0, 0, 0, 0.247);
+    border: none;
 }
 /* adjusting hover button */
 .cart button:hover{
     cursor: pointer;
     background-color: #60bc70;
     color: black;
+    transition: 0.5s;
 }
 /* adjusting price button */
 .cart p{
@@ -128,3 +148,49 @@ body{
     font-size: 35px; 
 }
 
+.right_text{ 
+   height: 15%;
+   padding-left: 70%;
+   color: #25612f;
+} 
+
+.right_text a{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    padding: 5px 20px 2px 20px;
+    box-shadow: 2px ;
+}
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    width: 115%;
+    height: 20%;
+    background-color: rgb(241, 209, 152);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    box-shadow: 0px 50px 15px 0px rgba(0, 0, 0, 0.247);
+}
+
+.ingredients_text{
+    font-size: 12px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+
+.flavors{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 115%;
+    height: 20%;
+    background-color: rgb(241, 209, 152);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    box-shadow: 0px 50px 15px 0px rgba(0, 0, 0, 0.247);
+}
+
+.flavors_text{
+    font-size: 12px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
