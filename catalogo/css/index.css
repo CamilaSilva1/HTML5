@@ -1,0 +1,78 @@
+/*   Author Camila Silva
+     Created in 19/04/2022
+     adjusting index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Bebas+Neue&family=Playfair+Display&display=swap');
+
+/* --------background------- */
+
+/* reset default */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* adjusting image that will be on the background */
+body{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    
+}
+/* --------header-------- */
+
+/* adjusting image that will be on the header */
+#main-header{
+    display: inline-block; 
+    background: rgba(0, 0, 0, 0.544) url(../img/header.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right center;
+    width: 88%;
+    height: 350px; 
+    margin-left: 80px; 
+    margin-top: 80px;
+    border-radius: 10px;
+}
+/* adjusting position navigate bar*/
+.navigate-bar{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-left: 65px;
+    padding-top: 30px;
+}
+/*  adjusting title that will be over the left header  */
+.navigate-bar h1{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+.navigate-bar p{
+    padding-left: 350px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.548);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* adjusting link that will be on the header */
+.link-header{
+    padding-left: 200px;
+}
+/* adjusting text link that will be on the header */
+.link-header a{
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Anek Odia', sans-serif;
+    color: rgba(255, 255, 255, 0.654);
+}
+/* adjusting hover link that will be on the header */
+.link-header a:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.597);
+    font-weight: bold;
+}
