@@ -2,7 +2,8 @@
      Created in 19/04/2022
      adjusting index.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Bebas+Neue&family=Playfair+Display&display=swap');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;700&family=Whisper&display=swap');
 
 /* --------background------- */
 
@@ -30,7 +31,7 @@ body{
     background-size: cover;
     background-position: right center;
     width: 88%;
-    height: 350px; 
+    height: 550px; 
     margin-left: 80px; 
     margin-top: 80px;
     border-radius: 10px;
@@ -38,19 +39,20 @@ body{
 /* adjusting position navigate bar*/
 .navigate-bar{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     color: white;
-    padding-left: 65px;
+    padding-left: 95px;
     padding-top: 30px;
 }
 /*  adjusting title that will be over the left header  */
 .navigate-bar h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     letter-spacing: 4px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .navigate-bar p{
-    padding-left: 350px;
+    padding-left: 600px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.548);
     letter-spacing: 2px;
@@ -59,7 +61,8 @@ body{
 
 /* adjusting link that will be on the header */
 .link-header{
-    padding-left: 200px;
+    display: flex;
+    padding-left: 250px;
 }
 /* adjusting text link that will be on the header */
 .link-header a{
@@ -76,3 +79,32 @@ body{
     color: rgba(0, 0, 0, 0.597);
     font-weight: bold;
 }
+/* adjusting main title that will bem on the header */
+.header-text{
+    display: block;
+    color: white;    
+    padding-left: 350px;
+}
+/* adjusting h2 and h2 that will be on the header */
+.header-text h1, h2{   
+    line-height: 1em;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+/* adjusting text "home care" that will be on the header */
+.homecare{
+    font-size: 80px;
+    font-family: 'Whisper', cursive;
+    color: orangered;
+    letter-spacing: 2px;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+
+
+
+
