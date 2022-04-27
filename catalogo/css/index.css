@@ -5,7 +5,7 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;700&family=Whisper&display=swap');
 
-/* --------background------- */
+/* --------default background------- */
 
 /* reset default */
 *{
@@ -51,18 +51,11 @@ body{
     letter-spacing: 4px;
     font-size: 40px;
 }
-.navigate-bar p{
-    padding-left: 600px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.548);
-    letter-spacing: 2px;
-    cursor: pointer;
-}
 
 /* adjusting link that will be on the header */
 .link-header{
     display: flex;
-    padding-left: 250px;
+    padding-left: 400px;
 }
 /* adjusting text link that will be on the header */
 .link-header a{
@@ -70,7 +63,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Anek Odia', sans-serif;
-    color: rgba(255, 255, 255, 0.654);
+    color: rgba(255, 255, 255, 0.459);
 }
 /* adjusting hover link that will be on the header */
 .link-header a:hover{
@@ -83,7 +76,7 @@ body{
 .header-text{
     display: block;
     color: white;    
-    padding-left: 350px;
+    padding-left: 250px;
 }
 /* adjusting h2 and h2 that will be on the header */
 .header-text h1, h2{   
@@ -96,12 +89,51 @@ body{
 }
 /* adjusting text "home care" that will be on the header */
 .homecare{
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Whisper', cursive;
     color: orangered;
     letter-spacing: 2px;
-    padding-left: 250px;
+    padding-left: 150px;
     padding-top: 100px;
+}
+
+/* -------- MAIN CONTENT -------- */
+
+/* adjusting the position main content*/
+#container-catalog{
+    position: relative;
+    display: flex;
+    /* largest space between the images */
+    justify-content: space-between;
+    margin: 0 80px;
+    background-color: rgba(216, 210, 210, 0.829);
+    border-radius: 10px 10px;  
+}
+/* adjusting main container of the products */
+.catalog-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* adjusting position of the product column */
+.product{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* adjusting the products images that will be on the center page*/
+.product img{
+    width: 382px;
+    height: 320px;
+    /* corta a imagem sem deixar desfocado */
+    object-fit: cover; 
+}
+
+.product img:hover{
+    cursor: pointer;
+    background-color: rgba(202, 17, 17, 0.7);
+    background-blend-mode: darken;
 }
 
 
