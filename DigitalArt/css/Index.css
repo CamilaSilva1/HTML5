@@ -3,18 +3,144 @@
    Style landing page digital art */
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Libre+Bodoni&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Libre+Bodoni&family=Raleway:ital,wght@1,200&family=Tapestry&display=swap');
 
-/* adjusting default of the body */
+@media(min-width: 768px){
+    /* adjusting default of the body */
 body{
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: rgb(176, 171, 171);
 }
-/* adjusting the center div */
+/* adjusting main div */
 #main{
-    width: 1224px; 
-    height: 580px;
-    background-color: rgb(191, 181, 181);
-    margin: 40px auto;
+    position: relative;
+}
+
+/* ----------- header ---------- */
+/* adjusting the elements on the header */
+.main_header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* adjusting the icon header */
+.icon_header{
+    padding: 20px; 
+}
+/* adjusting position navigate bar list */
+.navigate_bar li{
+    position: relative;
+    display: inline-block; 
+    bottom: 10px;
+    margin: 20px;
+}
+/* adjusting link on the navigate bar */
+.navigate_bar a{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Libre Bodoni', serif;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.627);   
+}
+/* adjusting hover link navigate bar */
+.navigate_bar a:hover{
+    color: black;
+    transition: 1s;
+}
+/* adjusting wallet link that will be on the header */
+.wallet a{
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Libre Bodoni', serif;
+    color: rgba(0, 0, 0, 0.627);
+    top: 20px;
+    right: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.627);
+}
+/* adjusting link waller hover */
+.wallet a:hover{
+    color: black;
+    transition: 1s;
+}
+
+/* ----------- body ---------- */
+main{
+    position: relative;
+}
+
+/* adjusting the title that will be on the center page */
+.main_title{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+}
+/* adjusting weight main title */
+.main_title strong{
+    font-weight: 400;
+}
+/* adjusting position center text */
+.main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+/* adjusting width of the image that will be on the center page */
+.content img{
+    width: 60%;
+}
+/* adjusting font of the central text */
+.text_body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+}
+/* adjustinf the page button */
+.btn_body{
+    padding: 15px;
+    font-family: 'Libre Bodoni', serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* adjusting hove of the button */
+.btn_body:hover{
+    color: yellow;
+    transition: .5s;
+}
+
+/* ------ FOOTER ------- */
+/* adjusting position footer text */
+.text_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+/* adjusting each column footer text */
+.footer_column{
+    position: relative;
+    display: flex;
+    padding: 60px;
+    margin: 40px;
+}
+/* adjusting each footer paragraph */
+.footer_column p{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 18px;
+}
+/* adjusting icons position */
+.footer_column i{
+    display: flex;
+    position: absolute;
+    left: 1px;
+    bottom: 130px;
+}
 }
