@@ -1,0 +1,75 @@
+/* Created by Camila Silva
+   Since 22/06/2022
+   Style page css */
+
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Kdam+Thmor+Pro&display=swap');
+
+@media screen and (min-width: 768px){
+    /*  ----- BODY ----- */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: url(../img/fundo.jpg) no-repeat;
+        background-size: cover; 
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    /* -----HEADER----- */
+    header{
+        width: 100%;
+        height: 15vh;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px #f0b6b692;
+    }
+    #navigate-bar-div{
+        position: relative;
+    }
+    .navigate-bar-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        margin: 35px;
+    }
+    .navigate-bar-nav li{
+        padding-top: 5px;
+        font-family: 'Joan', serif;
+        font-size: 15px;
+        color: #6b6767;
+    }
+    .navigate-bar-nav a{
+        text-decoration: none;
+        transition: .5s;
+    }
+    .navigate-bar-nav a:hover{
+        color: #e80707;
+    }
+    .navigate-bar-nav li:nth-child(1){
+        background-color: #e99ff5a5;
+        color: black;
+        font-size: 18px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px #f3aeba8b;
+        padding: 5px 20px 5px 20px;
+    }
+    /* ------ICONS------- */
+    .icon-clubs{
+        padding-right: 5px;
+    }
+    /* ------MAIN PAGE-------- */
+    #container{
+        display: flex;
+        width: 28%;
+        height: 70vh;
+        margin: 30px 70px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 2px #a172f792 ;
+        background-color: white;
+    }
+}
+/* font-family: 'Kdam Thmor Pro', sans-serif; */
